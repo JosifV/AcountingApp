@@ -1,0 +1,353 @@
+$narandzasta: #f6a600;
+$belaSlova: #f5f5f5;
+$oker:#c98500;
+$braon: #996515;
+$crvena:orangered;
+$zelena:darken($color: #49d050, $amount: 15%);
+$sivac: darken($color:rgb(82, 82, 82), $amount:15%);
+$plavac: darken($color:#45a8ee, $amount:15%);
+$plava:#4997d0;
+$teget: #0067a5;
+$jakaTeget: #00416a;
+$purpur: #9a4eae;
+$jakPurpur: #602f6b;
+$najjaciPurpur: #401a4c;
+body {
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.razmak {
+    padding: 50px 0 50px 0;
+}
+
+#section1 {
+    @extend .razmak;
+}
+
+#section2 {
+    @extend .razmak;
+}
+
+#section3 {
+    @extend .razmak;
+}
+
+#section4 {
+    @extend .razmak;
+}
+
+#jumbo {
+    // background: #272458;
+    h1 {
+        margin-top: 200px;
+        color: whitesmoke;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+    height: 680px;
+}
+
+#oNama {
+    letter-spacing: 1.5px;
+    font-size: 100%
+}
+
+#hederZaBlog {
+    background-color: $sivac;
+    color: white;
+}
+
+#teloBloga {
+    background-color: rgb(219, 219, 219)
+}
+
+li {
+    list-style-type: none;
+}
+
+.blog {
+    font-size: 150%;
+    color: darkslategrey;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#Bloag1 {
+    &:hover {
+        img {
+            filter: sepia(100%);
+        }
+    }
+}
+
+#Bloag2 {
+    &:hover {
+        img {
+            filter: sepia(100%);
+        }
+    }
+}
+
+#Bloag3 {
+    &:hover {
+        img {
+            filter: sepia(100%);
+        }
+    }
+}
+
+#g {
+    a {
+        letter-spacing: 1.5px;
+        color: $sivac;
+        font-size: 100%;
+        font-weight: 680;
+        &:hover {
+            color: darken($color: $sivac, $amount: 15%);
+            i {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* #krugac {
+    &:hover {
+        background-color: darken($color: #ffe1a8, $amount: 10%);
+    }
+} */
+
+#besplatno {
+    background-color: $sivac;
+    color: white;
+    h4 {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &:hover {
+        background-color: white;
+        color: $sivac;
+        border: 1px solid $sivac;
+    }
+}
+
+#radni {
+    background-color: $plavac;
+    color: white;
+    h4 {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &:hover {
+        background-color: white;
+        color: $plavac;
+        border: 1px solid $plavac;
+    }
+}
+
+#pun {
+    background-color: $zelena;
+    color: white;
+    h4 {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &:hover {
+        background-color: white;
+        color: $zelena;
+        border: 1px solid $zelena;
+    }
+}
+
+#krugac1 {
+    #znacka {
+        visibility: hidden;
+    }
+    &:hover {
+        // border: 1px solid $sivac;
+        #znacka {
+            visibility: visible
+        }
+    }
+}
+
+#krugac2 {
+    #znacka {
+        visibility: hidden;
+    }
+    &:hover {
+        // border: 1px solid $sivac;
+        #znacka {
+            visibility: visible
+        }
+    }
+}
+
+#krugac3 {
+    #znacka {
+        visibility: hidden;
+    }
+    &:hover {
+        // border: 1px solid $sivac;
+        #znacka {
+            visibility: visible
+        }
+    }
+}
+
+#podfuter {
+    background-color: $sivac;
+    color: white;
+    font-weight: bold;
+}
+
+#netoPdv {
+    background-color: $narandzasta;
+    color: $belaSlova;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    input {
+        @extend .inputac;
+    }
+    .gornjaTabla {
+        background-color: darken( $narandzasta, 30%);
+    }
+    .donjaTabla {
+        background-color: darken( $narandzasta, 10%);
+    }
+    .dodajDugme {
+        background-color: $oker;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($oker, 20%)
+        }
+    }
+    .izveziDugme {
+        background-color: $braon;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($oker, 20%)
+        }
+    }
+    .brisiDugme {
+        background-color: $crvena;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($crvena, 20%)
+        }
+    }
+    .inputac {
+        background-color: lighten( $narandzasta, 20%);
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $belaSlova;
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+// Plava nijansa
+#netoPdv2 {
+    background-color: $plava;
+    color: $belaSlova;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    input {
+        @extend .inputac2;
+        color: $belaSlova;
+    }
+    .gornjaTabla2 {
+        background-color: darken( $plava, 30%);
+    }
+    .donjaTabla2 {
+        background-color: darken( $plava, 10%);
+    }
+    .dodajDugme2 {
+        background-color: $teget;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($teget, 20%)
+        }
+    }
+    .izveziDugme2 {
+        background-color: $jakaTeget;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($jakaTeget, 20%)
+        }
+    }
+    .brisiDugme2 {
+        background-color: $crvena;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($crvena, 20%)
+        }
+    }
+    .inputac2 {
+        background-color: lighten( $plava, 20%);
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $belaSlova;
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+// Purpur nijansa
+#kepoKnj {
+    background-color: $purpur;
+    color: $belaSlova;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    input {
+        @extend .inputac23;
+        color: $belaSlova;
+    }
+    .gornjaTabla23 {
+        background-color: darken( $purpur, 20%);
+    }
+    .donjaTabla23 {
+        background-color: darken( $purpur, 10%);
+    }
+    .dodajDugme3 {
+        background-color: $jakPurpur;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($jakPurpur, 20%)
+        }
+    }
+    .izveziDugme3 {
+        background-color: $najjaciPurpur;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($najjaciPurpur, 20%)
+        }
+    }
+    .brisiDugme3 {
+        background-color: $crvena;
+        color: $belaSlova;
+        &:hover {
+            background-color: darken($crvena, 20%)
+        }
+    }
+    .inputac23 {
+        background-color: lighten( $purpur, 20%);
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $belaSlova;
+        text-shadow: 1px 1px 1px black;
+    }
+}

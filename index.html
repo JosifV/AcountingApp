@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="scssCss/css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="position: relative;" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        &#9776;
+                    </button>
+            <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#section1" class="nav-link">О нама</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link">Блог</a></li>
+                    <li class="nav-item"><a href="#section3" class="nav-link">Апликација</a></li>
+                    <li class="nav-item"><a href="#section4" class="nav-link">Пакети</a></li>
+                </ul>
+                <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                    <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                    <li class="dropdown order-1">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Улогуј се <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input id="emailInput" placeholder="Е пошта" class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="passwordInput" placeholder="Лозинка" class="form-control form-control-sm" type="text" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Улогуј се</button>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Заборавили сте лозинку?</a></small>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Заборавили сте лозинку?</h3>
+                    <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Ресетуј лозинку...</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Затвори</button>
+                    <button class="btn btn-primary">Запамти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid" id="jumbo" style="background-image: url('jumbo.jpg');background-size: cover;">
+        <h1 class="text-center"><i style="font-size:34px" class="fa">&#xf040;</i> Дигитално рачуноводство</h1><br>
+        <!-- <h4 class="text-center" id="promena"></h4> -->
+
+        <div class="text-center">
+            <div class="btn-group ">
+                <button id="skola" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal2">Пријави се</button>
+                <button id="kontakt" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal3">Контактирај нас</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal 2-->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header" style="background:#343a40;color:white">
+                    <h4 class="modal-title">Контактирај нас</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Ваш емаил:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Е пошта" name="email">
+                            <br>
+                            <label for="textareja">Ваше писмо:</label>
+                            <textarea id="textareja" class="form-control" placeholder="Писмо" style="resize:none"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Пошаљи</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer" style="background:#343a40;">
+                    <button type="button" class="btn btn-outline-success" data-dismiss="modal">Затвори</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header" style="background:#343a40;color:white">
+                    <h4 class="modal-title">Пријави се</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Е пошта:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Е пошта" name="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="usr">Корисничко име:</label>
+                            <input type="text" class="form-control" placeholder="Корисничко име" id="usr">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pwd">Лозинка:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Лозинка" name="pswd">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Потврди лозинку:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Потврди лозинку" name="pswd">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Слажем се са <a href="javascript:void(0)" id="i"> условима коришћења</a>
+                </label>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Приложи</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer" style="background:#343a40;">
+                    <button type="button" class="btn btn-outline-success" data-dismiss="modal">Затвори</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- O NAMA -->
+    <div id="section1" class="row">
+        <div class="col-md-6">
+            <div class="container">
+                <h2 style="font-weight: bold">О нама</h2>
+                <p id="oNama">Рачуноводство је систематско прикупљање, развој и анализа информација о финансијском стању једне организације. Те информације је могуће користити и искористити за различите сврхе. Послодавцима предузећа оне омогућавају планирање и контролу
+                    финансијских операција и трансакција, анализу економског стања организације или предузећа у циљу доношења адекватних пословних одлука. Државним органима те информације помажу приликом одређивања висине пореза коју предузеће треба да
+                    плати држави, итд. Између 4. и 3. миленијума п. н. е., у древном Ирану су, као последица новог социо-економског поретка, настале велике разлике у подели богатства услед чега су власт преузеле вође и свештеници. Имали су људе који су
+                    били задужени само за финансије. На неколико налазишта на Блиском истоку су, у склопу грађевина, нађена велика складишта за житарице, уз које су такође пронађене глинене плочице на којима је вођена евиденција о количинама - књиговодствени
+                    подаци. Почетак вођења књиговодства на глиненим плочицама се сматра једним од највећих достигнућа човечанства.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="add.png" style="width: 80%" class=" img-fluid mx-auto d-block" alt="gugl reklama">
+        </div>
+    </div>
+    <hr>
+    <div id="section2" class="row">
+        <!-- VIDEO -->
+        <div class="col-md-5 offset-1">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe width="1349" height="480" src="https://www.youtube.com/embed/dZ6KeqijlY0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- BLOG -->
+        <div id="teloBloga" class="col-md-5 offset-1">
+            <h1 id="hederZaBlog">Блог:</h1>
+            <div id="Bloag1" class="row">
+                <div class="col-sm-12">
+                    <a class="blog" href="http://accountingonion.com/"> Accounting Onion</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="slBlog" href="http://accountingonion.com/"><img src="blog1.jpg" alt="blog1" class="float-left img-thumbnail img-fluid"></a>
+                </div>
+                <div class="col-sm-8">
+                    <h4>Стручна анализа: Сигурност електронског плаћања</h4>
+                    <button class="btn btn-block btn-info">Сазнај више</button>
+                </div>
+            </div>
+            <div id="Bloag2" class="row">
+                <div class="col-sm-12">
+                    <a class="blog" href="https://www.accountingweb.com/">Accounting Web</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="slBlog" href="https://www.accountingweb.com/"><img src="blog2.jpg" alt="blog2" class="float-left img-thumbnail img-fluid"></a>
+                </div>
+                <div class="col-sm-8">
+                    <h4>Свакодневне муке: Студија једног пословног случаја</h4>
+                    <button class="btn btn-block btn-info">Сазнај више</button>
+                </div>
+            </div>
+            <div id="Bloag3" class="row">
+                <div class="col-sm-12">
+                    <a class="blog" href="http://blog.aicpa.org/"> AICPA Insights</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="slBlog" href="http://blog.aicpa.org/"><img src="blog3.jpg" alt="blog3" class="float-left img-thumbnail img-fluid"></a>
+                </div>
+                <div class="col-sm-8">
+                    <h4>Опасност или прилика: На прагу новог књиговодства</h4>
+                    <button class="btn btn-block btn-info">Сазнај више</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Nav pills -->
+    <ul id="section3" class="nav nav-pills nav-justified" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active font-weight-bold" data-toggle="pill" href="#netoPdv">Књига улазних рачуна</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" data-toggle="pill" href="#netoPdv2">Књига излазних рачуна</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link font-weight-bold" data-toggle="pill" href="#kepoKnj">Кепу књига</a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content" ng-app="myApp" ng-controller="myCtrl">
+        <div id="netoPdv" class="container tab-pane active"><br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="datum1">Датум:</label>
+                        <input value="{{datum}}" type="text" class="form-control" id="datum1" ng-model="user.datum" name="datum">
+                        <label for="racun1">Рачун фирме:</label>
+                        <input value="{{racun}}" type="text" class="form-control" id="racun1" ng-model="user.racun" name="racun">
+                        <label for="dobavljac1">Добављач:</label>
+                        <input value="{{dobavljac}}" type="text" class="form-control" id="dobavljac1" ng-model="user.dobavljac" name="dobavljac">
+                        <label for="pib1">ПИБ:</label>
+                        <input ng-model-options="{allowInvalid: true}" value="{{pib}}" type="number" class="form-control" id="pib1" ng-model="user.pib" name="pib">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="nneto">Неопорезив нето:</label>
+                        <input value="{{nneto}}" type="number" class="form-control" id="nneto1" ng-model="user.nneto" name="nneto">
+                        <label for="neto10">Нето 10%:</label>
+                        <input value="{{neto10}}" type="number" class="form-control" id="neto10" ng-model="user.neto10" name="neto10">
+                        <label for="neto20">Нето 20%:</label>
+                        <input value="{{neto20}}" type="number" class="form-control" id="neto20" ng-model="user.neto20" name="neto20">
+                    </div>
+
+                    <div class="container">
+                        <table class="table table-responsive-sm table-striped" id="tablica">
+                            <thead class="gornjaTabla">
+                                <tr id="tb1">
+                                    <th>Пдв 10%</th>
+                                    <th>Пдв 20%</th>
+                                    <th>Укупан износ</th>
+                                </tr>
+                            </thead>
+                            <tbody class="donjaTabla">
+                                <tr>
+                                    <td id="pdv10" value="{{neto10/10}}" ng-model="user.pdv10" name="pdv10">{{user.neto10/10}}</td>
+                                    <td id="pdv20" value="{{neto20/5}}" ng-model="user.pdv20" name="pdv20">{{user.neto20/5}}</td>
+                                    <td id="zbir" value="{{zbir}}" ng-model="user.zbir" name="zbir">{{(user.neto20/5) + (user.neto10/10) + (user.neto20 + user.neto10) + user.nneto}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn dodajDugme btn-block btn-lg" onclick="noviRed()"><i style="font-size:24px" class="fa">&#xf067;</i> Додај у Ексел</button>
+
+                    <br><br>
+                    <button class="btn float-left izveziDugme" id="btnExport" onclick="fnExcelReport();"><i style="font-size:24px" class="fa">&#xf0d1;</i> Извези у Ексел</button>
+                    <button ng-click="reset()" class="btn brisiDugme float-right "><i style="font-size:24px" class="fa">&#xf00d;</i> Бриши унето</button>
+                </div>
+            </div>
+            <br>
+            <button id="prikaz" type="button" class="btn btn-block inputac" data-toggle="collapse" data-target="#preview">Приказ документа</button>
+            <br>
+            <div class="container collapse" id="preview">
+                <table class="table table-responsive-sm table-hover " id="tabela">
+                    <thead>
+                        <tr id="predPrikaz2">
+
+                            <th>Датум</th>
+                            <th>Добављач</th>
+                            <th>Рачун фирме</th>
+                            <th>ПИБ</th>
+                            <th>Неопорезив нето</th>
+                            <th>Пдв 10%</th>
+                            <th>Пдв 20%</th>
+                            <th>Укупан износ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="predPrikaz">
+                        <tr>
+                            <td>{{user.datum}}</td>
+                            <td>{{user.dobavljac}}</td>
+                            <td>{{user.racun}}</td>
+                            <td>{{user.pib}}</td>
+                            <td>{{user.nneto}}</td>
+                            <td>{{user.neto10/10}}</td>
+                            <td>{{user.neto20/5}}</td>
+                            <td>{{(user.neto20/5) + (user.neto10/10) + (user.neto20 + user.neto10) + user.nneto}}</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="headerTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="netoPdv2" class="container tab-pane fade"><br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+
+
+                        <label for="datum12">Датум:</label>
+                        <input value="{{datum2}}" type="text" class="form-control" id="datum12" ng-model="user2.datum2" name="datum2">
+                        <label for="racun12">Рачун фирме:</label>
+                        <input value="{{racun2}}" type="text" class="form-control" id="racun12" ng-model="user2.racun2" name="racun2">
+                        <label for="dobavljac12">Купци/Пазар:</label>
+                        <input value="{{dobavljac2}}" type="text" class="form-control" id="dobavljac12" ng-model="user2.dobavljac2" name="dobavljac2">
+                        <label for="pib12">ПИБ:</label>
+                        <input ng-model-options="{allowInvalid: true}" value="{{pib2}}" type="number" class="form-control" id="pib12" ng-model="user2.pib2" name="pib2">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="nneto2">Неопорезив нето:</label>
+                        <input value="{{nneto2}}" type="number" class="form-control" id="nneto12" ng-model="user2.nneto2" name="nneto2">
+                        <label for="neto102">Нето 10%:</label>
+                        <input value="{{neto102}}" type="number" class="form-control" id="neto102" ng-model="user2.neto102" name="neto102">
+                        <label for="neto202">Нето 20%:</label>
+                        <input value="{{neto202}}" type="number" class="form-control" id="neto202" ng-model="user2.neto202" name="neto202">
+                    </div>
+
+                    <div class="container">
+                        <table class="table table-responsive-sm table-striped" id="tablica2">
+                            <thead class="gornjaTabla2">
+                                <tr id="tb12">
+                                    <th>Пдв 10%</th>
+                                    <th>Пдв 20%</th>
+                                    <th>Укупан износ</th>
+                                </tr>
+                            </thead>
+                            <tbody class="donjaTabla2">
+                                <tr>
+                                    <td id="pdv102" value="{{neto102/10}}" ng-model="user2.pdv102" name="pdv102">{{user2.neto102/10}}</td>
+                                    <td id="pdv202" value="{{neto202/5}}" ng-model="user2.pdv202" name="pdv202">{{user2.neto202/5}}</td>
+                                    <td id="zbir2" value="{{zbir2}}" ng-model="user2.zbir2" name="zbir2">{{(user2.neto202/5) + (user2.neto102/10) + (user2.neto202 + user2.neto102) + user2.nneto2}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn dodajDugme2 btn-block btn-lg" onclick="noviRed2()"><i style="font-size:24px" class="fa">&#xf067;</i> Додај у Ексел</button>
+
+                    <br><br>
+                    <button class="btn float-left izveziDugme2" id="btnExport2" onclick="fnExcelReport2();"><i style="font-size:24px" class="fa">&#xf0d1;</i> Извези у Ексел</button>
+                    <button ng-click="reset2()" class="btn brisiDugme2 float-right "><i style="font-size:24px" class="fa">&#xf00d;</i> Бриши унето</button>
+                </div>
+            </div>
+            <br>
+            <button id="prikaz2" type="button" class="btn btn-block inputac2" data-toggle="collapse" data-target="#preview2">Приказ документа</button>
+            <br>
+            <div class="container collapse" id="preview2">
+                <table class="table table-responsive-sm table-hover " id="tabela2">
+                    <thead>
+                        <tr id="predPrikaz22">
+
+                            <th>Датум</th>
+                            <th>Купци/Пазар</th>
+                            <th>Рачун фирме</th>
+                            <th>ПИБ</th>
+                            <th>Неопорезив нето</th>
+                            <th>Пдв 10%</th>
+                            <th>Пдв 20%</th>
+                            <th>Укупан износ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="predPrikaz2">
+                        <tr>
+                            <td>{{user2.datum2}}</td>
+                            <td>{{user2.dobavljac2}}</td>
+                            <td>{{user2.racun2}}</td>
+                            <td>{{user2.pib2}}</td>
+                            <td>{{user2.nneto2}}</td>
+                            <td>{{user2.neto102/10}}</td>
+                            <td>{{user2.neto202/5}}</td>
+                            <td>{{(user2.neto202/5) + (user2.neto102/10) + (user2.neto202 + user2.neto102) + user2.nneto2}}</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="headerTable2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="kepoKnj" class="container tab-pane fade"><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="datum3">Датум евиденције:</label><br>
+                    <input value="{{datum3}}" ng-model="user3.datum3" class="form-control" type="text" name="datum3" id="datum3"><br>
+                    <label for="dobavljac3">Опис евидентиране промене:</label><br>
+                    <input value="{{dobavljac3}}" ng-model="user3.dobavljac3" class="form-control" type="text" name="dobavljac3" id="dobavljac3"><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="zaduzenje">Задужење:</label><br>
+                    <input value="{{zaduzenje}}" ng-model="user3.zaduzenje" class="form-control" type="number" name="zaduzenje" id="zaduzenje"><br>
+                    <label for="razduzenje">Раздужење:</label><br>
+                    <input value="{{razduzenje}}" ng-model="user3.razduzenje" class="form-control" type="number" name="razduzenje" id="razduzenje"><br>
+                    <div class="container">
+                        <table class="table table-responsive-sm table-striped" id="">
+                            <thead class="gornjaTabla23">
+                                <tr id="tb123">
+                                    <th>Тренутна разлика:</th>
+                                    <th>Салдо:</th>
+                                </tr>
+                            </thead>
+                            <tbody class="donjaTabla23">
+                                <tr>
+                                    <td id="tRazlika" value="{{(zaduzenje - razduzenje)}}" ng-model="user3.tRazlika" name="tRazlika">{{user3.zaduzenje - user3.razduzenje}}</td>
+                                    <td id="saldo" value="realStanje" ng-model="user3.saldo" name="saldo"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn dodajDugme3 btn-block btn-lg" onclick="noviRed3()"><i style="font-size:24px" class="fa">&#xf067;</i> Додај у Ексел</button>
+
+                    <br><br>
+                    <button class="btn float-left izveziDugme3" id="btnExport3" onclick="fnExcelReport3();"><i style="font-size:24px" class="fa">&#xf0d1;</i> Извези у Ексел</button>
+                    <button ng-click="reset3()" class="btn brisiDugme3 float-right "><i style="font-size:24px" class="fa">&#xf00d;</i> Бриши унето</button>
+                </div>
+            </div>
+            <br>
+            <button id="prikaz3" type="button" class="btn btn-block inputac23" data-toggle="collapse" data-target="#preview3">Приказ документа</button>
+            <br>
+            <div class="container collapse" id="preview3">
+                <table class="table table-responsive-sm table-hover " id="tabela3">
+                    <thead>
+                        <tr id="predPrikaz23">
+
+                            <th>Датум евиденције</th>
+                            <th>Опис евидентиране промене</th>
+                            <th>Задужење</th>
+                            <th>Раздужење</th>
+                            <th>Салдо</th>
+                        </tr>
+                    </thead>
+                    <tbody id="predPrikaz3">
+                        <tr>
+                            <td>{{user3.datum3}}</td>
+                            <td>{{user3.dobavljac3}}</td>
+                            <td>{{user3.zaduzenje}}</td>
+                            <td>{{user3.razduzenje}}</td>
+                            <td>{{user3.saldo}}</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="headerTable3">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- TRI KARTICE -->
+    <div id="section4" class="row">
+        <div id="krugac1" class="col-md-4">
+            <div class="container">
+                <h2 class="text-center">Бесплатни пакет</h2>
+                <p class="text-center">Основне услуге.<br><span id="znacka" style="padding: 7px" class="badge badge-dark">За почетнике</span></p>
+                <div class="container">
+                    <i style="font-size:154px" class="fa d-flex justify-content-center">&#xf1db;</i>
+                    <p class="text-center">Бесплатни калкулатор / Обрачун плата</p>
+                    <a href="javascript:void(0)" id="besplatno" class="btn btn-block">
+                        <h4><i style="font-size:24px" class="fa">&#xf019;</i> Преузми</h4>
+                    </a>
+                </div>
+            </div>
+
+        </div><br>
+        <div id="krugac2" class="col-md-4">
+            <div class="container">
+                <h2 class="text-center">Радни пакет 40<i style="font-size:24px" class="fa">&#xf153;</i></h2>
+                <p class="text-center">Све што вам треба за обраду рачуна.<br><span id="znacka" style="padding: 7px" class="badge badge-primary">За запослене</span></p>
+                <div class="container">
+                    <i style="font-size:154px" class="fa d-flex justify-content-center">&#xf192;</i>
+                    <p class="text-center">Основни софтвер / Подршка на годину дана</p>
+                    <a href="javascript:void(0)" id="radni" class="btn btn-block">
+                        <h4><i style="font-size:24px" class="fa">&#xf019;</i> Преузми</h4>
+                    </a>
+                </div>
+            </div>
+
+        </div><br>
+        <div id="krugac3" class="col-md-4">
+            <div class="container">
+                <h2 class="text-center">Пун пакет 100<i style="font-size:24px" class="fa">&#xf153;</i></h2>
+                <p class="text-center">Комплетна софтверска подршка вашег пословања.<br><span id="znacka" style="padding: 7px" class="badge badge-success">За надређене</span></p>
+
+                <div class="container">
+                    <i style="font-size:154px" class="fa d-flex justify-content-center">&#xf058;</i>
+                    <p class="text-center">Све за фирму / Доживотна подршка</p>
+                    <a href="javascript:void(0)" id="pun" class="btn btn-block">
+                        <h4><i style="font-size:24px" class="fa">&#xf019;</i> Преузми</h4>
+                    </a>
+                </div>
+            </div>
+
+        </div><br>
+    </div>
+    <br>
+    <hr><br>
+    <!--- Futer sa spiskovima -->
+    <div class="container-fluid" style="background-color:#e6e6e6;padding:20px">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul id="g">
+                    <p style="font-weight:bold">Пратите нас:</p>
+                    <li><a href="javascript:void(0)">Facebook <i style="font-size:44px" class="fa faL">&#xf082;</i> </a></li>
+                    <li><a href="javascript:void(0)">Twiter   <i style="font-size:44px" class="fa faL">&#xf081;</i></a></li>
+                    <li><a href="javascript:void(0)">Google+ <i style="font-size:44px" class="fa faL">&#xf0d4;</i> </a></li>
+                    <li><a href="javascript:void(0)">Youtube <i style="font-size:44px" class="fa">&#xf166;</i> </a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul id="g">
+                    <p style="font-weight:bold">Наши партнери:</p>
+                    <li><a href="http://www.euroracunovodstvo.com/">Еуро-рачуноводство</a></li>
+                    <li><a href="http://dosen.rs/">Дошен</a></li>
+                    <li><a href="http://www.asmracunovodstvo.rs/">АСМ</a></li>
+                    <li><a href="http://www.knjigovodstvenaagencija.rs/">Аб лукс</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul id="g">
+                    <p style="font-weight:bold">Блог:</p>
+                    <li><a href="http://blog.aicpa.org/">AICPA Insights</a></li>
+                    <li><a href="http://nonprofit.belfint.com/">Belfint</a></li>
+                    <li><a href="https://www.accountingweb.com/">Accounting Web</a></li>
+                    <li><a href="http://accountingonion.com/">Accounting Onion</a></li>
+                    <li><a href="http://www.charlottecpafirm.com/blog/">Bordeaux & Bordeaux</a></li>
+                    <li><a href="http://www.bbcpa.com/bond-beebe-blog/">Bound Beege</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul id="g">
+                    <p style="font-weight:bold">Представништва:</p>
+                    <li><a href="javascript:void(0)">Београд <small>Тел: +38164 123 45 67</small></a></li>
+                    <li><a href="javascript:void(0)">Крагујевац <small>Тел:+38164 456 78 90</small></a></li>
+                    <li><a href="javascript:void(0)">Нови Сад <small>Тел:+38165 741 85 96</small></a></li>
+                    <li><a href="javascript:void(0)">Ниш <small>Тел:+38160 321 58 67</small></a></li>
+                    <li><a href="javascript:void(0)">Бања Лука <small>Тел:+38164 987 45 65</small></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- PODFUTER -->
+    <div>
+        <p id="podfuter" class="text-center">This website is made for non commercial use / Copyright 2018</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+body {
+    top: 0;
+    left: 0;
+    overflow-x: hidden
+}
+
+hr {
+    background: darkgray;
+    padding: 1px;
+}
+
+.razmak {
+    padding: 50px 0 50px 0
+}
+
+#section1 {
+    padding: 10px 0 10px 0;
+}
+
+#section2 {
+    padding: 10px 0 10px 0;
+}
+
+#section3 {
+    padding: 10px 0 10px 0;
+}
+
+#section4 {
+    padding: 10px 0 10px 0;
+}
+
+#jumbo {
+    height: 680px
+}
+
+#jumbo h1 {
+    margin-top: 200px;
+    color: whitesmoke;
+    font-family: Impact, Charcoal, sans-serif
+}
+
+#oNama {
+    letter-spacing: 1.5px;
+    font-size: 100%
+}
+
+#hederZaBlog {
+    background-color: #2c2c2c;
+    color: white
+}
+
+#teloBloga {
+    background-color: #dbdbdb
+}
+
+li {
+    list-style-type: none
+}
+
+.blog {
+    font-size: 150%;
+    color: darkslategrey
+}
+
+.blog:hover {
+    text-decoration: none
+}
+
+#Bloag1:hover img {
+    filter: sepia(100%)
+}
+
+#Bloag2:hover img {
+    filter: sepia(100%)
+}
+
+#Bloag3:hover img {
+    filter: sepia(100%)
+}
+
+#g a {
+    letter-spacing: 1.5px;
+    color: #2c2c2c;
+    font-size: 100%;
+}
+
+#g a:hover {
+    color: #060606
+}
+
+#g a:hover i {
+    text-decoration: none
+}
+
+#besplatno {
+    background-color: #2c2c2c;
+    color: white
+}
+
+#besplatno h4 {
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+#besplatno:hover {
+    background-color: white;
+    color: #2c2c2c;
+    border: 1px solid #2c2c2c
+}
+
+#radni {
+    background-color: #1384d3;
+    color: white
+}
+
+#radni h4 {
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+#radni:hover {
+    background-color: white;
+    color: #1384d3;
+    border: 1px solid #1384d3
+}
+
+#pun {
+    background-color: #2aa330;
+    color: white
+}
+
+#pun h4 {
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+#pun:hover {
+    background-color: white;
+    color: #2aa330;
+    border: 1px solid #2aa330
+}
+
+#krugac1 #znacka {
+    visibility: hidden
+}
+
+#krugac1:hover #znacka {
+    visibility: visible
+}
+
+#krugac2 #znacka {
+    visibility: hidden
+}
+
+#krugac2:hover #znacka {
+    visibility: visible
+}
+
+#krugac3 #znacka {
+    visibility: hidden
+}
+
+#krugac3:hover #znacka {
+    visibility: visible
+}
+
+#podfuter {
+    background-color: #2c2c2c;
+    color: white;
+    font-weight: bold
+}
+
+#netoPdv {
+    background-color: #f6a600;
+    color: #f5f5f5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black
+}
+
+#netoPdv .gornjaTabla {
+    background-color: #5d3f00
+}
+
+#netoPdv .donjaTabla {
+    background-color: #c38400
+}
+
+#netoPdv .dodajDugme {
+    background-color: #c98500;
+    color: #f5f5f5
+}
+
+#netoPdv .dodajDugme:hover {
+    background-color: #634200
+}
+
+#netoPdv .izveziDugme {
+    background-color: #996515;
+    color: #f5f5f5
+}
+
+#netoPdv .izveziDugme:hover {
+    background-color: #634200
+}
+
+#netoPdv .brisiDugme {
+    background-color: #ff4500;
+    color: #f5f5f5
+}
+
+#netoPdv .brisiDugme:hover {
+    background-color: #992900
+}
+
+#netoPdv .inputac,
+#netoPdv input {
+    background-color: #ffca5d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px black
+}
+
+input[type='number'] {
+    -moz-appearance: textfield
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none
+}
+
+#netoPdv2 {
+    background-color: #4997d0;
+    color: #f5f5f5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black
+}
+
+#netoPdv2 input {
+    color: #f5f5f5
+}
+
+#netoPdv2 .gornjaTabla2 {
+    background-color: #1a4666
+}
+
+#netoPdv2 .donjaTabla2 {
+    background-color: #2f7eb7
+}
+
+#netoPdv2 .dodajDugme2 {
+    background-color: #0067a5;
+    color: #f5f5f5
+}
+
+#netoPdv2 .dodajDugme2:hover {
+    background-color: #00273f
+}
+
+#netoPdv2 .izveziDugme2 {
+    background-color: #00416a;
+    color: #f5f5f5
+}
+
+#netoPdv2 .izveziDugme2:hover {
+    background-color: #000204
+}
+
+#netoPdv2 .brisiDugme2 {
+    background-color: #ff4500;
+    color: #f5f5f5
+}
+
+#netoPdv2 .brisiDugme2:hover {
+    background-color: #992900
+}
+
+#netoPdv2 .inputac2,
+#netoPdv2 input {
+    background-color: #9ac5e5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px black
+}
+
+#kepoKnj {
+    background-color: #9a4eae;
+    color: #f5f5f5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black
+}
+
+#kepoKnj input {
+    color: #f5f5f5
+}
+
+#kepoKnj .gornjaTabla23 {
+    background-color: #5c2e68
+}
+
+#kepoKnj .donjaTabla23 {
+    background-color: #7b3e8b
+}
+
+#kepoKnj .dodajDugme3 {
+    background-color: #602f6b;
+    color: #f5f5f5
+}
+
+#kepoKnj .dodajDugme3:hover {
+    background-color: #201024
+}
+
+#kepoKnj .izveziDugme3 {
+    background-color: #401a4c;
+    color: #f5f5f5
+}
+
+#kepoKnj .izveziDugme3:hover {
+    background-color: #000
+}
+
+#kepoKnj .brisiDugme3 {
+    background-color: #ff4500;
+    color: #f5f5f5
+}
+
+#kepoKnj .brisiDugme3:hover {
+    background-color: #992900
+}
+
+#kepoKnj .inputac23,
+#kepoKnj input {
+    background-color: #c293cf;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px black
+}
